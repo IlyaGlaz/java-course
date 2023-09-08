@@ -1,6 +1,8 @@
 package org.iglaz.javacore.lesson6;
 
-public class Warrior extends Hero {
+import org.iglaz.javacore.lesson6.weapons.MeleeWeapon;
+
+public class Warrior<T extends MeleeWeapon> extends Hero<T> {
 
     public Warrior(String name, int damage) {
         super(name, damage);
