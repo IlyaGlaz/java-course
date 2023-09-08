@@ -1,23 +1,22 @@
 package org.iglaz.javacore.lesson5;
 
 public class Computer {
+    private static final int BASE_VALUE = 250;
+    static int counter = 0;
 
     private int ssd = BASE_VALUE;
-    Ram ram;
-    int ves;
-    ProcessorType processorType;
-    static int counter = 0;
+    private Ram ram;
+    private int ves;
+    private ProcessorType processorType;
 
     public Computer(ProcessorType processorType) {
         this.processorType = processorType;
     }
 
-    private static final int BASE_VALUE = 250;
-
     public Computer(int newSsd, Ram ram) {
         ssd = newSsd;
         System.out.println("Comuter constr");
-        System.out.println("Первый конструкто");
+        System.out.println("Первый конструктор");
         counter++;
     }
 
@@ -31,7 +30,7 @@ public class Computer {
         ram.clear();
     }
 
-    final void  load() {
+    final void load() {
         System.out.println("Load Computer");
     }
 
@@ -39,5 +38,3 @@ public class Computer {
         System.out.println("Ram" + ram.value);
     }
 }
-
-

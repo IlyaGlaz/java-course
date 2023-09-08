@@ -1,7 +1,6 @@
 package org.iglaz.javacore.lesson1;
 
 public class Variable {
-
     public static void main(String[] args) {
         // arithmetic op
         // +, -, *, /, %

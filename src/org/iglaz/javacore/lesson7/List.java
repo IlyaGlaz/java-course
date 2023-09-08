@@ -1,7 +1,6 @@
 package org.iglaz.javacore.lesson7;
 
 public class List<T> {
-
     private final T[] elements;
     private int size;
 

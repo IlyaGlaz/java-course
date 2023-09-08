@@ -1,9 +1,7 @@
 package org.iglaz.javacore.lesson5;
 
 public class ComputerRunner {
-
     public static void main(String... args) {
-
         Laptop laptop = new Laptop(22, 12);
         Laptop laptop2 = new Laptop(22, 12);
         Laptop laptop3 = new Laptop(22, 12);

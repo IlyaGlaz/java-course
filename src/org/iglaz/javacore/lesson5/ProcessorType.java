@@ -12,6 +12,6 @@ public enum ProcessorType implements Printable {
 
     @Override
     public void someDeal() {
-        System.out.println("sdfasf");
+        System.out.println("bzzzz");
     }
 }

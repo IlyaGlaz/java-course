@@ -1,7 +1,6 @@
 package org.iglaz.javacore.lesson6;
 
 public class Mage extends Hero {
-
     public Mage(String name, int damage) {
         super(name, damage);
     }

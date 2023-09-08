@@ -3,7 +3,6 @@ package org.iglaz.javacore.lesson6;
 import org.iglaz.javacore.lesson6.weapons.MeleeWeapon;
 
 public class Warrior<T extends MeleeWeapon> extends Hero<T> {
-
     public Warrior(String name, int damage) {
         super(name, damage);
     }

@@ -1,7 +1,6 @@
 package org.iglaz.javacore.lesson5;
 
 public class Ram {
-
     int value;
 
     void clear() {

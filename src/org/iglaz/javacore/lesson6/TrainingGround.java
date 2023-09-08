@@ -1,7 +1,6 @@
 package org.iglaz.javacore.lesson6;
 
 public class TrainingGround {
-
     public static void main(String[] args) {
         Hero warrior = new Warrior("Боромир", 15);
         Hero mage = new Mage("Гэндольф", 20);

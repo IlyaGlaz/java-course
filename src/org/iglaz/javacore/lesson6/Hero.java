@@ -3,7 +3,6 @@ package org.iglaz.javacore.lesson6;
 import org.iglaz.javacore.lesson6.weapons.Weapon;
 
 public abstract class Hero<T extends Weapon> {
-
     private String name;
     private int damage;
     private T weapon;

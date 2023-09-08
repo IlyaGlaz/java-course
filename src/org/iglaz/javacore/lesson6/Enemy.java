@@ -1,7 +1,6 @@
 package org.iglaz.javacore.lesson6;
 
 public class Enemy implements Mortal {
-
     private String name;
     private int health;
 

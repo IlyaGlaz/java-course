@@ -3,21 +3,7 @@ package org.iglaz.javacore.lesson9;
 import java.io.File;
 import java.io.IOException;
 
-/**
- *
- *           OutputStream
- * application -----------> file
- *
- *
- * src/org/iglaz/javacore/lesson7/Person.java
- * out/production/java-course/org/iglaz/javacore/lesson5/Computer.class
- *
- *              InputStream
- * application <------------ file
- *
- */
 public class FileRunner {
-
     public static void main(String[] args) throws IOException {
         File file = new File("resource/text.txt");
         System.out.println(file.createNewFile());
@@ -31,6 +17,6 @@ public class FileRunner {
         System.out.println(file.getAbsolutePath());
 
         File dir = new File("resource/test/text");
-        dir.mkdirs();
+        System.out.println(dir.mkdirs());
     }
 }

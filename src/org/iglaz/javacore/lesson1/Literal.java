@@ -1,7 +1,6 @@
 package org.iglaz.javacore.lesson1;
 
 public class Literal {
-
     public static void main(String[] args) {
         System.out.println(25); // int
         System.out.println(25L); // long
