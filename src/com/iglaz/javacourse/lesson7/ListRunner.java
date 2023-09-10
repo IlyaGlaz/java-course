@@ -1,9 +1,7 @@
 package com.iglaz.javacourse.lesson7;
 
-import java.util.Collection;
+import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
-import java.util.TreeMap;
 
 public class ListRunner {
     public static void main(String[] args) {
@@ -11,12 +9,9 @@ public class ListRunner {
         Person person2 = new Person(2, "Ivan", "Sidorov");
         Person person3 = new Person(3, "Ivan", "Petrov");
 
-        Map<Person, String> map = new TreeMap<>(new PersonComparator());
-        map.put(person2, "Ivan");
-        map.put(person3, "Ivan");
-        map.put(person1, "Ivan");
-        Set<Person> people = map.keySet();
-        Collection<String> values = map.values();
-        Set<Map.Entry<Person, String>> entries = map.entrySet();
+        Map<Integer, Person> map = new HashMap<>();
+        map.put(person2.getId(), person2);
+        map.put(person3.getId(), person3);
+        map.put(person1.getId(), person1);
     }
 }
