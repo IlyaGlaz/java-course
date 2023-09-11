@@ -4,11 +4,12 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class InputStreamRunner {
     public static void main(String[] args) throws IOException {
         File file1 = new File(String.join(File.separator, "resource", "text.txt"));
-        File file2 = Path.of("resources", "test.txt").toFile();
+        File file2 = Paths.get("resources", "test.txt").toFile();
 
         try (FileInputStream inputStream = new FileInputStream(file2)) {
 //            byte[] bytes = inputStream.readAllBytes();
