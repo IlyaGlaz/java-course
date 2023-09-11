@@ -13,6 +13,6 @@ public class StreamRunner {
                 .map(Dish::getCalories)
                 .reduce((d1, d2) -> d1 + d2);
 
-        System.out.println(reduce.get);
+        System.out.println(reduce.get());
     }
 }
