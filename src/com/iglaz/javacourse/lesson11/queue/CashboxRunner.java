@@ -1,23 +1,12 @@
 package com.iglaz.javacourse.lesson11.queue;
 
-import java.util.ArrayDeque;
 import java.util.List;
-import java.util.Queue;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
 
 public class CashboxRunner {
     public static void main(String[] args) throws InterruptedException {
-        ExecutorService executorService = Executors.newFixedThreadPool(5);
-        executorService.submit(() -> {
-            try {
-                Thread.sleep(20000L);
-                System.out.println("Hello World");
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-        });
-        Queue<Cashbox> cashboxes = new ArrayDeque<>(List.of(new Cashbox(), new Cashbox()));
+        BlockingQueue<Cashbox> cashboxes = new ArrayBlockingQueue<>(2, true, List.of(new Cashbox(), new Cashbox()));
 
         BuyerThread buyerThread1 = new BuyerThread(cashboxes);
         BuyerThread buyerThread2 = new BuyerThread(cashboxes);
