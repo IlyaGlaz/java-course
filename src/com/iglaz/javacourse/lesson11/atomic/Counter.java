@@ -1,18 +1,20 @@
 package com.iglaz.javacourse.lesson11.atomic;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Counter {
 
-    private int count;
+    private AtomicInteger count = new AtomicInteger();
 
     public void increment() {
-        count++;
+        count.incrementAndGet();
     }
 
     public void decrement() {
-        count--;
+        count.decrementAndGet();
     }
 
     public int getCount() {
-        return count;
+        return count.get();
     }
 }
